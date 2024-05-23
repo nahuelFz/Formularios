@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleNuevo.css">
+    <title>Añadir Personaje</title>
+</head>
+<body>
+    <header>
+        <div class="barraDescuento">
+            <p>20% de descuento en todos los productos</p>
+        </div>
+
+        <div class="encabezado">
+            <h1>Nombre Tienda</h1>
+        </div>
+
+        <div class="menu">
+            <a>Contacto</a>
+            <a>Registrarme</a>       
+            <a>Ingresar</a>  
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h2>Añade tu Super</h2>
+            <p>Agrega tu personaje favorito completando las opciones</p>
+
+            <form action="" method="post">
+
+             <div class="contInputs">
+                 <div class="contenedorInput">
+                    <label for="nombre">*Nombre</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre">
+                 </div>
+
+                 <div class="contenedorInput">
+                    <label for="especie">*Especie</label>
+                    <br>
+                    <select name="especie" id="especie">
+                       <option value="" disabled selected></option>
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                    </select>
+                 </div>
+
+                 <div class="contenedorInput">
+                    <label for="fecha">Fecha</label>
+                    <br>
+                    <input type="date" name="fecha" id="fecha">
+                 </div>
+
+                 <div class="contenedorInput">
+                     <label for="foto">Agregar Foto</label>
+                     <br>
+                     <input type="file" name="foto" id="foto"></input>
+                 </div>
+
+                 <div class="contenedorInput">
+                     <textarea name="descripcion" id="descripcion" cols="30" rows="10">Descripcion</textarea>
+                 </div>
+ 
+                 <div class="contenedorInput">
+                     <label for="poderes">Poderes</label>
+                     <br>
+                     <input type="checkbox" name="poderes" id="poderes "value="[poderes]">
+                     <label for="">Volar</label>
+                     <br>
+                     <input type="checkbox" name="poderes" id="poderes "value="[poderes]">
+                     <label for="">Super Inteligencia</label>
+                     <br>
+                     <input type="checkbox" name="poderes" id="poderes "value="[poderes]">
+                     <label for="">Vista de Rayo Laser</label>
+                     <br>
+                     <input type="checkbox" name="poderes" id="poderes "value="[poderes]">
+                     <label for="">Billetera Gorda</label>
+                     <hr>
+                     <label for="poderes">Tipo de Personaje</label>
+                        <br>
+                         <label for="">Héroe / Heroína</label>
+                         <input type="radio" name="heroe" id="heroe" value="heroe">
+                         <br>
+                         <label for="">Villano / Villana</label>
+                         <input type="radio" name="heroe" id="heroe" value="villano">
+                 </div>
+             </div>
+             
+            </form>
+            <input type="submit" value="Añadir">
+        </div>
+    </main>
+
+    <footer style="text-align: center;">
+        <p>Todos los derechos reservados a FRONT END </p>
+    </footer> 
+</body>
+</html>
